@@ -1,0 +1,29 @@
+{
+  "name": "atomicjolt-lti-components",
+  "version": "1.0.0",
+  "description": "React components for LTI",
+  "main": "dist/index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npx vitest"
+  },
+  "keywords": [],
+  "author": "Atomic Jolt",
+  "license": "MIT",
+  "peerDependencies": {
+    "@atomicjolt/lti-client": "^2.2.0",
+    "react": "<=16 >=18",
+    "react-dom": "<=16 >=18"
+  },
+  "devDependencies": {
+    "@atomicjolt/lti-client": "file:../atomicjolt-lti-client",
+    "@types/react": "^18.2.21",
+    "i18next": "^23.2.8",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.33.0"
+  }
+}
