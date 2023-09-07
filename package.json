@@ -6,7 +6,8 @@
   "typings": "types/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "npx vitest"
+    "test": "npx vitest",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "Atomic Jolt",
