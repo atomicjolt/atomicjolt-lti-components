@@ -10,21 +10,19 @@ type LtiLaunchCheckProps = {
 const LtiLaunchCheck: React.FC<LtiLaunchCheckProps> = (props) => {
   const { children, stateValidation } = props;
   const [isValid, setIsValid] = useState<boolean | null>(null);
+  const { stateVerified } = stateValidation;
 
   useEffect(() => {
-    console.log('in use effect');
     const launch = async () => {
       const v = await ltiLaunch(stateValidation);
-      console.log('setting valid to ', v);
       setIsValid(v);
     };
-    launch();
+    if (stateVerified !== true) {
+      launch();
+    }
   }, [stateValidation]);
 
-  console.log('stateValidation', stateValidation);
-  console.log('isValid', isValid);
-
-  if (isValid === true) {
+  if (isValid === true || stateVerified === true) {
     return <>{children}</>;
   }
 
