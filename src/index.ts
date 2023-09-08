@@ -1,1 +1,1 @@
-export * from './lti_launch_check';
+export { default as LtiLaunchCheck } from './lti_launch_check';
