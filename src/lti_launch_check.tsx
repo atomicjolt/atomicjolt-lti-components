@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ltiLaunch } from '@atomicjolt/lti-client';
-import type { LaunchSettings } from '@atomicjolt/lti-client';
+import type { LaunchSettings } from '@atomicjolt/lti-client/types';
 
 type LtiLaunchCheckProps = {
   children: React.ReactNode;

@@ -2,8 +2,9 @@ import React from 'react';
 import { render, screen, act } from '@testing-library/react';
 import { describe, it, expect, vi, afterEach } from 'vitest';
 import LtiLaunchCheck from './lti_launch_check';
-import type { LaunchSettings, IdToken, ResourceLinkClaim } from '@atomicjolt/lti-client/types';
 import { 
+  IdToken, 
+  ResourceLinkClaim,
   MESSAGE_TYPE, 
   MessageTypes,
   LTI_VERSION,
@@ -12,7 +13,7 @@ import {
   RESOURCE_LINK_CLAIM,
   DEPLOYMENT_ID,
   ROLES_CLAIM,
-} from '@atomicjolt/lti-client';
+} from '@atomicjolt/lti-types';
 
 const resourceLinkClaim: ResourceLinkClaim = {
   id: '134',
