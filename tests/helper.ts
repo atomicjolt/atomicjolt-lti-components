@@ -1,7 +1,7 @@
-import { 
-  IdToken, 
+import {
+  IdToken,
   ResourceLinkClaim,
-  MESSAGE_TYPE, 
+  MESSAGE_TYPE,
   MessageTypes,
   LTI_VERSION,
   LtiVersions,
@@ -20,6 +20,7 @@ export const idToken: IdToken = {
   name: 'John Doe',
   email: 'johndoe@example.com',
   aud: '',
+  auds: [],
   azp: '',
   exp: 0,
   iat: 0,
